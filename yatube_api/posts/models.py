@@ -53,7 +53,7 @@ class Group(models.Model):
         """
         Returns text of the object
         """
-        return self.title
+        return self.title[:15]
 
 
 class Comment(models.Model):
@@ -82,4 +82,4 @@ class Comment(models.Model):
         """
         Returns text of the object
         """
-        return self.text
+        return self.text[:15]
